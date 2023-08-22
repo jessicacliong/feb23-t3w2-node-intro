@@ -1,5 +1,6 @@
-const promptSync = require('prompt-sync')({sigint:true});
+//const promptSync = require('prompt-sync')({sigint:true});
 
+const promptSync = require('prompt-sync');
 const promptInstance = promptSync({
 	sigint: true // allows CTRL+C to exit the app
 });
@@ -18,8 +19,6 @@ do {
     console.log("The universe seems unfulfilled...");
   }
 } while(!userEnteredNumber);
-
-
 
 // let {messagesToShare} = require('./messageList');
 
