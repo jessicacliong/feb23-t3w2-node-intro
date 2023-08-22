@@ -1,4 +1,4 @@
-const promptSync = require('prompt-sync');
+const promptSync = require('prompt-sync')({sigint:true});
 
 const promptInstance = promptSync({
 	sigint: true // allows CTRL+C to exit the app
@@ -21,15 +21,15 @@ do {
 
 
 
-let {messagesToShare} = require('./messageList');
+// let {messagesToShare} = require('./messageList');
 
-function helloWorld(someMessageToSay){
-	console.log(someMessageToSay);
-}
+// function helloWorld(someMessageToSay){
+// 	console.log(someMessageToSay);
+// }
 
 
-helloWorld("hello there!");
+// helloWorld("hello there!");
 
-for (const message of messagesToShare) {
-	helloWorld(message);
-}
+// for (const message of messagesToShare) {
+// 	helloWorld(message);
+// }
