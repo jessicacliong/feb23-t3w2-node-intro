@@ -8,7 +8,7 @@ let messages = [
 function sayMessages(){
   console.log(messages);
 }
-sayMessages();
+// sayMessages();
 
 module.exports = {
 	messagesToShare: messages
